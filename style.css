@@ -422,8 +422,8 @@ footer {
 	text-shadow:1px 2px 3px #39c0fa;
 }
 .myButton:hover {
-	background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
-	background-color:#5cbf2a;
+	background:linear-gradient(to bottom, #39c0fa 5%, #00a2ff 100%);
+	background-color:#00affa;
 }
 .myButton:active {
 	position:relative;
