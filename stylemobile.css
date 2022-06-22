@@ -1,0 +1,63 @@
+/********* GRUNDLÄGGANDE *************/
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Comfortaa:wght@300&family=Indie+Flower&family=Titan+One&display=swap');
+
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 1vw
+  }
+
+  .overlay .closebtn {
+    font-size: 1vw;
+  }
+
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+  h1,
+  h2 {
+    font-family: 'Titan One', cursive;
+    font-weight: 100;
+    font-size: 7vw;
+    line-height: 10vw;
+  }
+
+  #imgIndex {
+    margin-top: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100%;
+    width: 80%;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    color: #939393;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .wrapper, #kontakt{
+    margin-top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    font-variant: normal;
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+  iframe{
+
+    width: 100%;
+
+  }
+
+  }
+
+  

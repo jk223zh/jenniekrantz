@@ -1,0 +1,271 @@
+html,
+body {
+    gap: 0px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+    display: grid;
+
+    font-family: 'Comfortaa', cursive;
+
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+    ;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*** RUBRIKER ***/
+h1,
+h2 {
+    font-family: 'Caveat', cursive;
+    font-size: 2vw;
+    line-height: 2vw;
+}
+
+.greyblue {
+    color: #7d9c91;
+}
+
+
+/****** HEADERS******/
+header#schema {
+    height: 90vh;
+    background-image: url(/img/1x/SVG/SVG/headerigen.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header img {
+    margin: 2%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#imgIndex {
+    margin-top: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100%;
+    width: 30%;
+}
+
+/* ----------- OVERLAY NAV ------------ */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #939393;
+    padding: 1%;
+    width: 90%;
+    color: #a0a0a0;
+    position: fixed;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.993);
+}
+
+.overlay-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 20px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+    opacity: 50%;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #3e3e3e;
+    opacity: 100%;
+}
+
+.overlay .closebtn {
+    font-size: 40px;
+}
+
+/******** KONTAKT.HTML ***********/
+
+
+/* FORMULÄR */
+
+input[type=text],
+select,
+textarea {
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    width: 100%;
+    color: white;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    padding: 40px;
+}
+
+.col-25 {
+    float: left;
+    width: 15%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 85%;
+    margin-top: 6px;
+}
+
+
+.button {
+    padding: 1vh;
+    margin-bottom: 3%;
+    width: 100%;
+    font-size: 1.5rem;
+    color: #000000;
+    border: #000000;
+    border-style: groove;
+    background-color: #ffffff;
+}
+
+
+/*** IMG ***/
+
+#piano {
+    width: 100%;
+}
+
+/**** SECTION INDEX ***/
+
+.section1index {
+    padding-top: 2%;
+    padding-bottom: 10%;
+    text-align: center;
+}
+
+.graytext {
+   color: rgb(97, 97, 97);
+}
+
+.section2index h1,
+h2 {
+    color: rgb(255, 255, 255);
+}
+
+.section2index {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: #7d9c91;
+    color: rgb(255, 255, 255);
+}
+
+
+/* WRAPPER ** */
+.wrapper,
+#kontakt {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    font-variant: normal;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+
+/** BUTTONS **/
+.myButton {
+    background: linear-gradient(to bottom, #39c0fa 5%, #00a2ff 100%);
+    background-color: #00affa;
+    border-radius: 10px;
+    border: 1px solid #39c0fa;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 17px 76px;
+    text-decoration: none;
+    text-shadow: 1px 2px 3px #39c0fa;
+}
+
+.myButton:hover {
+    background: linear-gradient(to bottom, #39c0fa 5%, #00a2ff 100%);
+    background-color: #00affa;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+/*** FOOTER ***/
+footer {
+    padding: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
