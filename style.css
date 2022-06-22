@@ -383,11 +383,9 @@ footer {
 
 .section1index{
   padding-top: 2%;
-  padding-bottom: 2%;
+  padding-bottom: 10%;
   color: rgb(97, 97, 97);
-  border-bottom-style: solid;
-  border-width: 1px;
-  border-color: rgb(70, 70, 70);
+  text-align: center;
 }
 
 .section2index h1, h2{
@@ -399,9 +397,6 @@ footer {
   padding-bottom: 2%;
   background-color: #04AA6D;
   color: rgb(255, 255, 255);
-  border-bottom-style: solid;
-  border-width: 1px;
-  border-color: rgb(70, 70, 70);
 }
 
 .wrapper {
@@ -411,4 +406,26 @@ footer {
   font-variant: normal;
   font-size: 1rem;
   line-height: 2rem;
+}
+
+.myButton {
+	background:linear-gradient(to bottom, #39c0fa 5%, #00a2ff 100%);
+	background-color:#00affa;
+	border-radius:40px;
+	border:1px solid #39c0fa;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:14px;
+	padding:17px 76px;
+	text-decoration:none;
+	text-shadow:1px 2px 3px #39c0fa;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
 }
