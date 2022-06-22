@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Comfortaa:wght@300&family=Indie+Flower&display=swap');
+
+html, body{
+    gap: 0px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+    display: grid;
+    
+    font-family: 'Comfortaa', cursive;
+
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    ;
+  }
+
+
+  @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+.center {
+    text-align: center;
+}
+
+header#index {
+    margin: 5%;
+}
+
+header#schema {
+  height: 90vh;
+  background-image: url(/img/1x/SVG/SVG/headerigen.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header img {
+    margin-top: 10vh;
+    display: block;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+  /* ----------- OVERLAY NAV ------------ */
+
+  nav {
+      display: flex;
+      flex-direction: row;
+      justify-content:space-between;
+      align-items: center;
+      padding: 20px;
+      border-top-style: solid;
+      border-width: thin;
+  }
+
+  .overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.993);
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 20px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+    opacity: 50%;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #3e3e3e;
+    opacity: 100%;
+    transform: scale(1.2);
+  }
+  
+  .overlay .closebtn {
+    font-size: 40px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 1vw}
+    .overlay .closebtn {
+    font-size: 1vw;
+    }
+
+  }
+  
+/***********************************************/
+
+/******************************************/
+hr {margin-bottom: 10%;
+    margin-top: 8%;
+    color: #ffffff;}
+
+  #links {display: flex;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    width: 60%;
+    justify-content: space-around;}
+
+  #links img {-webkit-filter: drop-shadow(2px 2px 2px #222);
+  filter: drop-shadow(2px 2px 2px #222);
+  width: 100px;}
+
+  #links img:hover {transform: scale(1.2);}
+
+  #omoss .wrapper {color: #000000;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    font-variant: normal;
+    font-size: 1vw;
+    line-height: 2vw;}
+
+    #imgIndex {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 100%;
+    }
+/******** KONTAKT.HTML ***********/
+
+header#kontakt {
+    padding-top: 10vh;
+}
+
+    #kontakt {color: #000000;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    font-variant: normal;
+    font-size: 1vw;
+    line-height: 2vw;}
+
+/* FORMULÄR */
+
+input[type=text], select, textarea {width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;}
+  
+  label {padding: 12px 12px 12px 0;
+    display: inline-block;}
+  
+  input[type=submit] {background-color: #04AA6D;
+    width: 100%;
+    color: white;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float:right;}
+  
+  input[type=submit]:hover {background-color: #45a049;}
+  
+  .container {border-radius: 5px;
+    padding: 40px;}
+  
+  .col-25 {
+    float: left;
+    width: 15%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {float: left;
+    width: 85%;
+    margin-top: 6px;}
+  
+  /* Clear floats after the columns */
+  .row:after {content: "";
+    display: table;
+    clear: both;}
+  
+  .button {font-family: 'Courier New', Courier, monospace; 
+    font-variant: small-caps;
+    border-radius: 4px;
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+    padding: 1vh;
+    margin-bottom: 3%;
+    width: 100%;
+    font-size: 1.5rem;
+    color: #000000;
+    border: #000000;
+    border-style: groove;
+    background-color: #ffffff;}
+  
+  .button span {cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;}
+  
+  .button span:after {content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;}
+  
+  .button:hover span {padding-right: 25px;}
+  
+  .button:hover span:after {opacity: 1;
+    right: 0;}
+
+
+    /****** OM *************/
+
+    #galleri img {
+        width: 100%;
+    }
+
+
+
+    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 800px) {
+
+      h1, h2 {
+        font-family: 'Caveat', cursive;
+        font-size: 10vw;
+        line-height: 10vw;
+      }
+
+            header#schema {
+              height: 50vh;
+              background-image: url(/img/1x/SVG/SVG/headerigen.png);
+              background-size: 50vh;
+              background-repeat: no-repeat;
+            }
+
+        header#kontakt  {
+            padding: 5%;
+        }
+
+        header img {margin-top: 5%;
+            width: 80%;}
+      
+        #omoss .wrapper, #kontakt {width: 80%;
+            font-size: 1rem;
+            line-height: 2rem;}
+
+        #links { padding: 10%;
+        margin-top: 10%;
+        width: 80%;
+    align-items: center;}
+
+        #links img {width: 70px;}
+
+          .button {padding: 1vh;
+            margin-bottom: 3%;
+              width: 100%;
+              font-size: 1.5rem;
+              color: #000000;
+              border: #000000;
+              border-style: groove;
+              background-color: #ffffff;}
+    }
+
+
+footer {
+    border-top-style: solid;
+      border-width: thin;
+    margin-top: 20%;
+    padding: 5%;
+}
+
+.footer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
