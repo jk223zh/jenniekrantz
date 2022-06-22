@@ -36,14 +36,11 @@ body {
     }
 }
 
-
-
-.center {
-    text-align: center;
-}
-
-header#index {
-    margin: 5%;
+h1, h2 {
+  font-family: 'Caveat', cursive;
+  font-size: 2vw;
+  line-height: 2vw;
+  color: #c06900;
 }
 
 header#schema {
@@ -55,11 +52,18 @@ header#schema {
 }
 
 header img {
-    margin-top: 10vh;
+  margin: 2%;
     display: block;
-    width: 20%;
     margin-left: auto;
     margin-right: auto;
+}
+
+#imgIndex {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100%;
+  width: 30%;
 }
 
 
@@ -68,12 +72,16 @@ header img {
 
   nav {
       display: flex;
+      color: #a0a0a0;
       flex-direction: row;
       justify-content:space-between;
       align-items: center;
       padding: 20px;
+      margin-bottom: 10%;
       border-top-style: solid;
+      border-bottom-style: solid;
       border-width: thin;
+      border-color: #ccc;
   }
 
   .overlay {
@@ -109,7 +117,6 @@ header img {
   .overlay a:hover, .overlay a:focus {
     color: #3e3e3e;
     opacity: 100%;
-    transform: scale(1.2);
   }
   
   .overlay .closebtn {
@@ -129,7 +136,7 @@ header img {
 /******************************************/
 hr {margin-bottom: 10%;
     margin-top: 8%;
-    color: #ffffff;}
+    color: #e3e3e3;}
 
   #links {display: flex;
     margin-top: 10%;
@@ -145,7 +152,7 @@ hr {margin-bottom: 10%;
 
   #links img:hover {transform: scale(1.2);}
 
-  #omoss .wrapper {color: #000000;
+  #omoss .wrapper {color: #626262;
     margin-left: auto;
     margin-right: auto;
     width: 40%;
@@ -298,6 +305,17 @@ input[type=text], select, textarea {width: 80%;
               border: #000000;
               border-style: groove;
               background-color: #ffffff;}
+
+      #piano {
+        width: 100%;
+      }
+      #imgIndex {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+        width: 80%;
+      }
     }
 
 
