@@ -135,7 +135,7 @@ nav {
 input[type=text],
 select,
 textarea {
-    width: 80%;
+    width: 96%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -193,6 +193,37 @@ input[type=submit]:hover {
     background-color: #ffffff;
 }
 
+table {
+    background-color: #ffffff;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+th, td {
+    border: 2px solid rgb(32, 32, 32);
+    text-align: center;
+    padding: 5px;
+}
+
+th {
+    background-color: rgb(248, 248, 248);
+    color: rgb(0, 0, 0);
+}
+
+tr:nth-of-type(odd) {
+    background-color: rgb(206, 205, 205);
+}
+
+.green {
+    background-color: lightgreen;
+}
+
+.red {
+    background-color: indianred;
+}
+.yellow {
+    background-color: rgb(248, 180, 32);
+}
 
 /*** IMG ***/
 
@@ -234,6 +265,7 @@ h2 {
     font-variant: normal;
     font-size: 1rem;
     line-height: 2rem;
+    margin-top: 8%;
 }
 
 

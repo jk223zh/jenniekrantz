@@ -12,32 +12,23 @@
 
 <body>
 
-    <nav>
-    
+<nav>
+    <div id="myNav" class="overlay">
 
-        <div id="myNav" class="overlay">
-    
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    
-            <div class="overlay-content">
-                <a href="kontakt.html">Kontakt</a>
-                <a href="musik.html">Musik</a>
-            </div>
-            
-            
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <div class="overlay-content">
+            <a href="index.html">Hem</a>
+            <a href="kontakt.html">Kontakt och kalender</a>
+            <a href="pris.html">Pris</a>
+            <a href="musik.html">Lyssna</a>
         </div>
-        
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()"> &#9776; </span>
-        <div>
-         <a href="/index.html"><img src="/img/loggavit.png" alt="" width="100px" class="centerImg"></a> 
-        </div>
-        <div>
-          <a href="/boka.html"><img src="/img/1x/SVG/SVG/kontakt.svg" alt="" width="30px" class="centerImg"></a> 
-        </div>
-    
-        <a href="index.html"><img src="/img/logga_1-8.png" width="100px" alt=""></a>
-    
-    </nav>
+    </div>
+
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()"> &#9776; </span>
+    <div>
+        <img src="/img/logga_1-8.png" width="200px" alt="">
+</nav>
 
 
 
@@ -48,7 +39,7 @@
     <section>
         <div class="wrapper">
             <h1 class="greyblue">Boka Jennie Krantz</h1>
-            
+
             <p class="graytext">Genom att fylla i forumeläret kan du skicka en bokningsförfrågan till Böksholm. Ange vilken typ av sammanhang bokningen avser, datum och tid, plats och andra detaljer som är relevant för bokningen. Formuläret går även att använda för övrig kontakt med bandet. </p>
 
             <p>Eller varför inte slå en signal? 070 000 00 00</p>
@@ -56,11 +47,13 @@
     </section>
 
 
+
+
     <form id="kontakt">
         
     
         <fieldset id="Forfragan">
-            <legend>Ärende</legend>
+            <legend class="greyblue">Ärende</legend>
             <div>
                 <select name="forfragan" id="forfragan">
                     <option value="booking">Bokning</option>
@@ -70,13 +63,13 @@
             </div>
         </fieldset>
         <fieldset id="Textmeddelande">
-            <legend>Meddelande</legend>
+            <legend class="greyblue">Meddelande</legend>
             <div>
                 <textarea name="message" id="message" cols="50" rows="10" required></textarea>
             </div>
         </fieldset>
         <fieldset id="Contact">
-            <legend>Kontaktuppgifter</legend>
+            <legend class="greyblue">Kontaktuppgifter</legend>
             <div>
                 <label for="name">Ditt namn</label>
                 <input type="text" name="name" id="name" required>
@@ -90,6 +83,236 @@
             <input type="submit" value="Skicka">
         </div>
     </form>
+
+    <div class="wrapper">
+        <hr>
+        <h2 class="greyblue">Tillgänglighet</h2>
+        
+        <p><i class="green">Grön = Tillgänglig</i> - <i class="red">Röd = Icke tillgänglig</i> </p>
+
+        <table>
+            <tr>
+                <th rowspan="1">Vecka</th>
+                <th rowspan="1">Mån</th>
+                <th rowspan="1">Tis</th>
+                <th rowspan="1">Ons</th>
+                <th rowspan="1">Ons</th>
+                <th rowspan="1">Fre</th>
+                <th rowspan="1">Lör</th>
+                <th rowspan="1">Sön</th>
+            </tr>
+            <tr>
+                <td>32</td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+            </tr>
+            <tr>
+                <td>33</td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+            </tr>
+            <tr>
+                <td>34</td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+            </tr>
+            <tr>
+                <td>35</td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+            </tr>
+            <tr>
+                <td>36</td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+            </tr>
+            <tr>
+                <td>37</td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+            </tr>
+            <tr>
+                <td>38</td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+            </tr>
+            <tr>
+                <td>39</td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+            </tr>
+            <tr>
+                <td>40</td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+            </tr>
+            <tr>
+                <td>41</td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+            </tr>
+            <tr>
+                <td>42</td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+            </tr>
+            <tr>
+                <td>43</td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+            </tr>
+            <tr>
+                <td>44</td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+            </tr>
+            <tr>
+                <td>45</td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+            </tr>
+            <tr>
+                <td>46</td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+            </tr>
+            <tr>
+                <td>47</td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+            </tr>
+            <tr>
+                <td>48</td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+            </tr>
+            <tr>
+                <td>49</td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+            </tr>
+            <tr>
+                <td>50</td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+            </tr>
+            <tr>
+                <td>51</td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+            </tr>
+            <tr>
+                <td>52</td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+                <td class="green"> </td>
+            </tr>
+        </table>
+    </div>
     </main>
 
 
