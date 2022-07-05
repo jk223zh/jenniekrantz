@@ -4,6 +4,7 @@
 
 
 @media screen and (max-height: 450px) {
+
   .overlay a {
     font-size: 1vw
   }
